@@ -1,0 +1,11 @@
+<div class="form-group">
+    <label for="firstname">Disciplina</label>
+    <div class="form-row d-flex justify-content-around align-items-center mt-3">
+        <select class="form-control" value="@InitialSubject" @onchange="ReceiveNewSubject">
+            @foreach (var subject in _subjectList)
+            {
+                <option value="@subject.Id"> @subject.Name </option>
+            }
+        </select>
+    </div>
+</div>

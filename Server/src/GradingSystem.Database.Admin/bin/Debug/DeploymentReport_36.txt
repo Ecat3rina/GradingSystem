@@ -1,0 +1,29 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[EvaluationSchemes].[ItemNr] is being dropped, data loss could occur.
+       The column [dbo].[EvaluationSchemes].[PageNr] is being dropped, data loss could occur.
+       The column [dbo].[EvaluationSchemes].[ScoreComment] is being dropped, data loss could occur.
+       The column [dbo].[EvaluationSchemes].[ScoreValue] is being dropped, data loss could occur.
+
+** User actions
+     Alter
+       [dbo].[EvaluationSchemes] (Table)
+     Create
+       [dbo].[EvaluationSchemeComponent] (Table)
+       Default Constraint: unnamed constraint on [dbo].[EvaluationSchemeComponent] (Default Constraint)
+       [dbo].[FK_EvaluationSchemeComponent] (Foreign Key)
+       [dbo].[FK_GradeSchemeComponent] (Foreign Key)
+
+** Supporting actions
+
+The column [dbo].[EvaluationSchemes].[ItemNr] is being dropped, data loss could occur.
+The column [dbo].[EvaluationSchemes].[PageNr] is being dropped, data loss could occur.
+The column [dbo].[EvaluationSchemes].[ScoreComment] is being dropped, data loss could occur.
+The column [dbo].[EvaluationSchemes].[ScoreValue] is being dropped, data loss could occur.
+

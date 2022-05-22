@@ -1,0 +1,28 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[GradeSchemes]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column Grade in table [dbo].[GradeSchemes] is currently  DECIMAL (18) NOT NULL but is being changed to 
+         DECIMAL (18, 3) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible
+         with type  DECIMAL (18, 3) NOT NULL.
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[GradeSchemes] (Default Constraint)
+     Table rebuild
+       [dbo].[GradeSchemes] (Table)
+     Create
+       [dbo].[FK_EvaluatorSubjectId] (Foreign Key)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_ExamId] (Foreign Key)
+     Create
+       [dbo].[FK_ExamId] (Foreign Key)
+
+The type for column Grade in table [dbo].[GradeSchemes] is currently  DECIMAL (18) NOT NULL but is being changed to  DECIMAL (18, 3) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  DECIMAL (18, 3) NOT NULL.
+

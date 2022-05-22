@@ -1,0 +1,14 @@
+C:\Users\Ecaterina\source\repos\GradingSystem\src\GradingSystem.Database.Thesis\bin\Debug\GradingSystem.Database.Thesis.dacpac
+C:\Users\Ecaterina\source\repos\GradingSystem\src\GradingSystem.Database.Thesis\bin\Debug\GradingSystem.Database.Thesis.dll
+C:\Users\Ecaterina\source\repos\GradingSystem\src\GradingSystem.Database.Thesis\bin\Debug\GradingSystem.Database.Thesis.pdb
+C:\Users\Ecaterina\source\repos\GradingSystem\src\GradingSystem.Database.Thesis\obj\Debug\Model.xml
+C:\Users\Ecaterina\source\repos\GradingSystem\src\GradingSystem.Database.Thesis\obj\Debug\refactor.xml
+C:\Users\Ecaterina\source\repos\GradingSystem\src\GradingSystem.Database.Thesis\obj\Debug\postdeploy.sql
+C:\Users\Ecaterina\source\repos\GradingSystem\src\GradingSystem.Database.Thesis\obj\Debug\predeploy.sql
+C:\Users\Ecaterina\source\repos\GradingSystem\src\GradingSystem.Database.Thesis\obj\Debug\GradingSystem.Database.Thesis.dll
+C:\Users\Ecaterina\source\repos\GradingSystem\src\GradingSystem.Database.Thesis\obj\Debug\GradingSystem.Database.Thesis.pdb
+C:\Users\Ecaterina\source\Projects\GradingSystem\src\GradingSystem.Database.Thesis\bin\Debug\GradingSystem.Database.Thesis.dacpac
+C:\Users\Ecaterina\source\Projects\GradingSystem\src\GradingSystem.Database.Thesis\bin\Debug\GradingSystem.Database.Thesis.dll
+C:\Users\Ecaterina\source\Projects\GradingSystem\src\GradingSystem.Database.Thesis\bin\Debug\GradingSystem.Database.Thesis.pdb
+C:\Users\Ecaterina\source\Projects\GradingSystem\src\GradingSystem.Database.Thesis\obj\Debug\GradingSystem.Database.Thesis.dll
+C:\Users\Ecaterina\source\Projects\GradingSystem\src\GradingSystem.Database.Thesis\obj\Debug\GradingSystem.Database.Thesis.pdb

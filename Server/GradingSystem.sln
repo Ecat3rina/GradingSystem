@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{2D2EE66E-A0C6-45E3-B7F9-AF44685FEC84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{B635F40D-E0BA-4592-891A-350ECCDEEEBA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GradingSystem.Database.Admin", "src\GradingSystem.Database.Admin\GradingSystem.Database.Admin.sqlproj", "{C8E92474-9706-475B-AE4B-39D62A09D369}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradingSystem.Service.Admin", "src\GradingSystem.Service.Admin\GradingSystem.Service.Admin.csproj", "{E1E603AE-577E-44C3-BF5D-F48A7E98479B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradingSystem.Service.Scoring", "src\GradingSystem.Service.Scoring\GradingSystem.Service.Scoring.csproj", "{293A28F0-4301-4DC5-9539-4E02A244A8F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradingSystem.Service.Authentication", "src\GradingSystem.Service.Authentication\GradingSystem.Service.Authentication.csproj", "{23A73820-64ED-4C6A-8647-87F3578D8386}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradingSystem.Service.ThesisService", "src\GradingSystem.Service.ThesisService\GradingSystem.Service.ThesisService.csproj", "{7ECDD49B-A275-41F5-AA63-FDE593DF7DE9}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GradingSystem.Database.Authentication", "src\GradingSystem.Database.Authentication\GradingSystem.Database.Authentication.sqlproj", "{E1DC8085-9933-4A4B-AE8B-753183A2E822}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GradingSystem.Database.Theses", "src\GradingSystem.Database.Thesis\GradingSystem.Database.Theses.sqlproj", "{9D37BCEB-6F9A-4E02-ADFE-F71A659D62AF}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GradingSystem.Database.Scoring", "GradingSystem.Database.Scoring\GradingSystem.Database.Scoring.sqlproj", "{6AB07220-3B92-40FF-9922-B3B49C0D52BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8E92474-9706-475B-AE4B-39D62A09D369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E92474-9706-475B-AE4B-39D62A09D369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E92474-9706-475B-AE4B-39D62A09D369}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C8E92474-9706-475B-AE4B-39D62A09D369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E92474-9706-475B-AE4B-39D62A09D369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8E92474-9706-475B-AE4B-39D62A09D369}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E1E603AE-577E-44C3-BF5D-F48A7E98479B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1E603AE-577E-44C3-BF5D-F48A7E98479B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E603AE-577E-44C3-BF5D-F48A7E98479B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1E603AE-577E-44C3-BF5D-F48A7E98479B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293A28F0-4301-4DC5-9539-4E02A244A8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293A28F0-4301-4DC5-9539-4E02A244A8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293A28F0-4301-4DC5-9539-4E02A244A8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293A28F0-4301-4DC5-9539-4E02A244A8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A73820-64ED-4C6A-8647-87F3578D8386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A73820-64ED-4C6A-8647-87F3578D8386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A73820-64ED-4C6A-8647-87F3578D8386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A73820-64ED-4C6A-8647-87F3578D8386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ECDD49B-A275-41F5-AA63-FDE593DF7DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ECDD49B-A275-41F5-AA63-FDE593DF7DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ECDD49B-A275-41F5-AA63-FDE593DF7DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ECDD49B-A275-41F5-AA63-FDE593DF7DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1DC8085-9933-4A4B-AE8B-753183A2E822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DC8085-9933-4A4B-AE8B-753183A2E822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1DC8085-9933-4A4B-AE8B-753183A2E822}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E1DC8085-9933-4A4B-AE8B-753183A2E822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DC8085-9933-4A4B-AE8B-753183A2E822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1DC8085-9933-4A4B-AE8B-753183A2E822}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9D37BCEB-6F9A-4E02-ADFE-F71A659D62AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D37BCEB-6F9A-4E02-ADFE-F71A659D62AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D37BCEB-6F9A-4E02-ADFE-F71A659D62AF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9D37BCEB-6F9A-4E02-ADFE-F71A659D62AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D37BCEB-6F9A-4E02-ADFE-F71A659D62AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D37BCEB-6F9A-4E02-ADFE-F71A659D62AF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6AB07220-3B92-40FF-9922-B3B49C0D52BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB07220-3B92-40FF-9922-B3B49C0D52BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB07220-3B92-40FF-9922-B3B49C0D52BA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6AB07220-3B92-40FF-9922-B3B49C0D52BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB07220-3B92-40FF-9922-B3B49C0D52BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB07220-3B92-40FF-9922-B3B49C0D52BA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8E92474-9706-475B-AE4B-39D62A09D369} = {2D2EE66E-A0C6-45E3-B7F9-AF44685FEC84}
+		{E1E603AE-577E-44C3-BF5D-F48A7E98479B} = {B635F40D-E0BA-4592-891A-350ECCDEEEBA}
+		{293A28F0-4301-4DC5-9539-4E02A244A8F2} = {B635F40D-E0BA-4592-891A-350ECCDEEEBA}
+		{23A73820-64ED-4C6A-8647-87F3578D8386} = {B635F40D-E0BA-4592-891A-350ECCDEEEBA}
+		{7ECDD49B-A275-41F5-AA63-FDE593DF7DE9} = {B635F40D-E0BA-4592-891A-350ECCDEEEBA}
+		{E1DC8085-9933-4A4B-AE8B-753183A2E822} = {2D2EE66E-A0C6-45E3-B7F9-AF44685FEC84}
+		{9D37BCEB-6F9A-4E02-ADFE-F71A659D62AF} = {2D2EE66E-A0C6-45E3-B7F9-AF44685FEC84}
+		{6AB07220-3B92-40FF-9922-B3B49C0D52BA} = {2D2EE66E-A0C6-45E3-B7F9-AF44685FEC84}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D2D2D81-664C-426B-AFA9-D365421CEBA5}
+	EndGlobalSection
+EndGlobal

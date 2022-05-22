@@ -1,0 +1,18 @@
+.main-table{
+    margin: 10px !important;
+    width: 700px;
+}
+
+.material-icons{
+    cursor: pointer;
+}
+
+.commands-container{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn{
+    margin-right: 10px;
+}

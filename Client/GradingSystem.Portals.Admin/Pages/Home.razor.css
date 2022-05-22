@@ -1,0 +1,33 @@
+.main-banner{
+    background-color: #6002ee; 
+    height: 70px;
+    
+}
+
+.brand-name{
+    
+    
+    margin-left: 10px;
+}
+
+.primary-color{
+    color: #efe5fd;
+}
+.button{
+    cursor: pointer;
+}
+.logout-container{
+    margin-right : 10px;
+}
+
+.logout-btn:hover{
+    color: #d4bff9;
+}
+
+.default-cursor{
+    cursor: default;
+}
+.username{
+    margin-left: 3px;
+}
+

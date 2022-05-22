@@ -1,0 +1,35 @@
+﻿@page "/login"
+<main class="d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-row justify-content-center align-items-center">
+        <span class="material-icons big-icon">perm_identity</span>
+    </div>
+    <div class="d-flex flex-row justify-content-center align-items-center">
+        <EditForm Model="@LoginModel" OnValidSubmit="@OnLoginClick" autocomplete="off">
+            <DataAnnotationsValidator />
+
+            <div class="form-group mt-2 mb-2">
+
+                <InputText id="username" @bind-Value="LoginModel.Username" class="form-control"
+                    placeholder="Numele de utilizator" autocomplete="off" />
+            <ValidationMessage For="@(() => LoginModel.Username)" />
+
+            </div>
+            <div class="form-group mt-2 mb-2">
+
+                <InputText id="password" @bind-Value="LoginModel.Password" class="form-control"
+                    placeholder="Parola" autocomplete="off" />
+            <ValidationMessage For="@(() => LoginModel.Password)" />
+            </div>
+            @if(!userExists)
+            {
+                <label>Utilizatorul nu exista sau parola este incorecta</label>
+            }
+
+            <div class="form-group mt-2 d-flex flex-row justify-content-center align-items-center">
+                <button class="btn btn-success" type="submit">Autentificare</button>
+
+            </div>
+        </EditForm>
+
+    </div>
+</main>

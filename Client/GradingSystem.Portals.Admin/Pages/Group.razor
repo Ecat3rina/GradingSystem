@@ -1,0 +1,68 @@
+@page "/home/groups"
+@layout Home
+<PageTitle>Grupe</PageTitle>
+<div class="d-flex flex-row commands-container">
+    <button @onclick="OnGoBackClick" class="btn btn-secondary command-btn">
+        <div class="d-flex flex-row ">
+            <span class="material-icons">arrow_back</span>
+            <span>Inapoi</span>
+        </div>
+       
+    </button>
+    <button @onclick="OnAddNewGroupClick" class="btn btn-success">
+        <div class="d-flex flex-row ">
+            <span class="material-icons">add</span>
+            <span>Adauga grupa</span>
+        </div>
+    </button> 
+</div>
+
+
+    @if(_showEditForm)
+    {
+        <EditGroup
+        GroupModel=@_editGroup 
+        OnEditFinished=@OnFinishingEditingGroup
+        OnEditCanceled=@OnEditGroupCanceled
+        />
+    }
+
+    @if(_showDeleteModal)
+    {
+        <DeleteModal
+        Text="grupul"
+        Id=@groupId
+        OnClose=@OnCloseDeleteModalClick/>
+    }
+
+<div class="d-flex flex-row main-table">
+<table class="table table-striped table-bordered ">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nume</th>
+            <th scope="col">Descriere</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            if (groups != null)
+            {
+                foreach (var group in groups)
+                {
+                    <tr>
+                        <th scope="row">@group.Id</th>
+                        <td>@group.Name</td>
+                        <td>@group.Description</td>
+                        <td><span @onclick="() => OnEditGroupClick(group.Id)" class="material-icons">edit</span></td>
+                        <td><span @onclick="() => OnDeleteGroupClick(group.Id)" class="material-icons">delete</span> </td>
+                    </tr>
+                }
+            }
+        }
+    </tbody>
+</table>
+</div>
+

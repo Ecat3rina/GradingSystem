@@ -1,0 +1,42 @@
+<div class="d-flex edit-form-container">
+
+    <EditForm EditContext="@_editContext" OnValidSubmit="@OnFinishingEditClick" autocomplete="off">
+        <DataAnnotationsValidator />
+        @*<ValidationSummary />*@
+        @if (!string.IsNullOrWhiteSpace(EvaluatorModel?.Id))
+
+        {
+            <div class="form-group widthForID">
+                <label for="eId">ID</label>
+                <InputText id="eId" @bind-Value="EvaluatorModel.Id" class="form-control" readonly="true" />
+            </div>
+
+        }
+
+        <div class="form-group">
+            <label for="lastname">Nume</label>
+            <InputText id="lastname" @bind-Value="EvaluatorModel.LastName" class="form-control"
+                aria-describedby="lastnameComment" autocomplete="off" />
+            <ValidationMessage For="@(() => EvaluatorModel.LastName)" />
+        </div>
+        
+        <div class="form-group">
+            <label for="firstname">Prenume</label>
+            <InputText id="firstname" @bind-Value="EvaluatorModel.FirstName" class="form-control"
+                aria-describedby="firstnameComment" autocomplete="off" />
+            <ValidationMessage For="@(() => EvaluatorModel.FirstName)" />
+        </div>
+
+        <SubjectList 
+        InitialSubject=@initialSubject 
+        OnSelectedSubject=@OnFinishingSelectingSubject />
+        <ValidationMessage For="@(() => EvaluatorModel.SubjectId)" />
+
+        <div class="form-row d-flex justify-content-around align-items-center mt-3">
+            <button class="btn btn-success" type="submit">Ok</button>
+            <button @onclick="OnCancelEditClick" class="btn btn-warning">Cancel</button>
+        </div>
+
+    </EditForm>
+
+</div>

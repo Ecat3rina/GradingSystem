@@ -1,0 +1,33 @@
+.main-banner[b-bs0l5ygr6a]{
+    background-color: #6002ee; 
+    height: 70px;
+    
+}
+
+.brand-name[b-bs0l5ygr6a]{
+    
+    
+    margin-left: 10px;
+}
+
+.primary-color[b-bs0l5ygr6a]{
+    color: #efe5fd;
+}
+.button[b-bs0l5ygr6a]{
+    cursor: pointer;
+}
+.logout-container[b-bs0l5ygr6a]{
+    margin-right : 10px;
+}
+
+.logout-btn:hover[b-bs0l5ygr6a]{
+    color: #d4bff9;
+}
+
+.default-cursor[b-bs0l5ygr6a]{
+    cursor: default;
+}
+.username[b-bs0l5ygr6a]{
+    margin-left: 3px;
+}
+

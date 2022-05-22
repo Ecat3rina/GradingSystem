@@ -1,0 +1,160 @@
+<div class="d-flex edit-form-container">
+
+    <EditForm EditContext="@_editContext" OnValidSubmit="@OnFinishingEditClick" autocomplete="off">
+        <DataAnnotationsValidator />
+        @if (!string.IsNullOrWhiteSpace(EvaluationSchemeModel?.Id))
+
+        {
+            <div class="form-group widthForID">
+                <label for="evSchemeId">ID</label>
+                <InputText id="evSchemeId" @bind-Value="EvaluationSchemeModel.Id" class="form-control" readonly="true" />
+            </div>
+
+            <div class="form-group evSchemeName">
+                <label for="evSchemeName">Nume</label>
+                <InputText id="evSchemeName" @bind-Value="EvaluationSchemeModel.Name" class="form-control"
+                aria-describedby="evSchemeNameComment" autocomplete="off" />
+                <ValidationMessage For="@(() => EvaluationSchemeModel.Name)" />
+            </div>
+
+            <div class="evSchemeName">
+                <ExamSchemeList
+                 InitialExam=@initialExamName
+                  OnSelectedExam=@OnFinishingSelectingExam />
+                <ValidationMessage For="@(() => EvaluationSchemeModel.ExamId)" />
+            </div>
+
+
+            if (@EvaluationSchemeModel.EvaluationSchemeComponents.Count > 0)
+            {
+
+                for (int i = 0; i < @EvaluationSchemeModel.NumberOfItems; i++)
+
+                {
+
+                    var pozitie = i;
+                    <div class="form-group">
+                        <div class="same-row">
+                            <label for="item">Numarul itemului</label>
+                            <InputNumber @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].ItemNr"
+                    class="form-control" aria-describedby="itemComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="page">Numarul paginii</label>
+                            <InputNumber @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].PageNr"
+                    class="form-control" aria-describedby="pageComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="min">Punctaj minim</label>
+                            <InputNumber @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].MinimumScore"
+                    class="form-control" aria-describedby="minComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="max">Punctaj maxim</label>
+                            <InputNumber @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].MaximumScore"
+                    class="form-control" aria-describedby="maxComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="answer">Raspuns corect</label>
+                            <InputText @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].CorrectAnswer"
+                    class="form-control" aria-describedby="answerComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="specifications">Specificatii</label>
+                            <InputText @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].Specifications"
+                    class="form-control" aria-describedby="specificationsComment" autocomplete="off" />
+                        </div>
+                    </div>
+                    <div>
+                        <ValidationMessage id="evSchemeComponent"
+                For="@(() => EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].ItemNr)" />
+                    </div>
+
+                }
+
+            }
+
+        }
+        else
+
+        {
+            <div class="form-group evSchemeName">
+                <label for="evSchemeName">Nume</label>
+                <InputText id="evSchemeName" @bind-Value="EvaluationSchemeModel.Name" class="form-control"
+                aria-describedby="evSchemeNameComment" autocomplete="off" />
+                <ValidationMessage For="@(() => EvaluationSchemeModel.Name)" />
+            </div>
+
+            <div class="evSchemeName">
+                <ExamList InitialExam=@initialExamName OnSelectedExam=@OnFinishingSelectingExam />
+                <ValidationMessage For="@(() => EvaluationSchemeModel.ExamId)" />
+            </div>
+
+            <div class="form-group">
+                <label for="numberOfItems">Numarul total de itemi</label>
+                <InputNumber @bind-Value="EvaluationSchemeModel.NumberOfItems" class="form-control"
+                aria-describedby="numberOfItemsComment" autocomplete="off" />
+                <ValidationMessage id="nrItems" For="@(() => EvaluationSchemeModel.NumberOfItems)" />
+            </div>
+
+            <div class="form-row d-flex mt-3">
+            <button class="btn btn-primary" type="button" @onclick="GetEvaluationSchemeComponents">Genereaza lista de componente</button>
+            </div>
+
+            if (@generateEvaluationComponents)
+            {
+            {
+
+                for (int i = 0; i < @EvaluationSchemeModel.NumberOfItems; i++)
+                {
+
+                    var pozitie = i;
+                    <div class="form-group">
+                        <div class="same-row">
+                            <label for="item">Numarul itemului</label>
+                            <InputNumber @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].ItemNr"
+                    class="form-control" aria-describedby="itemComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="page">Numarul paginii</label>
+                            <InputNumber @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].PageNr"
+                    class="form-control" aria-describedby="pageComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="min">Punctaj minim</label>
+                            <InputNumber @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].MinimumScore"
+                    class="form-control" aria-describedby="minComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="max">Punctaj maxim</label>
+                            <InputNumber @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].MaximumScore"
+                    class="form-control" aria-describedby="maxComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="answer">Raspuns corect</label>
+                            <InputText @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].CorrectAnswer"
+                    class="form-control" aria-describedby="answerComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="specifications">Specificatii</label>
+                            <InputText @bind-Value="EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].Specifications"
+                    class="form-control" aria-describedby="specificationsComment" autocomplete="off" />
+                        </div>
+                    </div>
+                    <div>
+                        <ValidationMessage id="evSchemeComponent"
+                For="@(() => EvaluationSchemeModel.EvaluationSchemeComponents[pozitie].ItemNr)" />
+                    </div>
+                }
+            }
+}
+
+        }
+        <div class="form-row d-flex mt-3">
+            <button class="btn btn-success" type="submit">Ok</button>
+            <button @onclick="OnCancelEditClick" class="btn btn-warning">Cancel</button>
+        </div>
+
+    </EditForm>
+
+</div>

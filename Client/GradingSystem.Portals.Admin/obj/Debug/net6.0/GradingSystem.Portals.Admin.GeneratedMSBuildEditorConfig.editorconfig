@@ -1,0 +1,147 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = GradingSystem.Portals.Admin
+build_property.RootNamespace = GradingSystem.Portals.Admin
+build_property.ProjectDir = C:\Users\Ecaterina\source\Projects\GradingSystem\Client\GradingSystem.Portals.Admin\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Ecaterina\source\Projects\GradingSystem\Client\GradingSystem.Portals.Admin
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/AddScheduleExam.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZGRTY2hlZHVsZUV4YW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vqpkoi4lds
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/DeleteModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEZWxldGVNb2RhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0qpype1tw0
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/EditEvaluationScheme.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFZGl0RXZhbHVhdGlvblNjaGVtZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-66oail3xyt
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/EditEvaluator.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFZGl0RXZhbHVhdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-7f4bdhwhxl
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/EditExam.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFZGl0RXhhbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-evncwqqcqc
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/EditGradeScheme.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFZGl0R3JhZGVTY2hlbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-yy3qsn98kg
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/EditGroup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFZGl0R3JvdXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-5pa8dmulba
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/EditStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFZGl0U3R1ZGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-atxgitijw5
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/EditSubject.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFZGl0U3ViamVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-9lw6nv6h5q
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/EvaluationSchemeList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFdmFsdWF0aW9uU2NoZW1lTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-q5caivkwum
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/ExamList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFeGFtTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-hzzyr33b8c
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/GradeSchemeList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xHcmFkZVNjaGVtZUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-2ru3fbbm7b
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/GroupList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xHcm91cExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-cgkiain4lu
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/SubjectList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdWJqZWN0TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-2gpunvjuu5
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/ViewEvaluationScheme.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xWaWV3RXZhbHVhdGlvblNjaGVtZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-81i6k49c7c
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Components/ViewGradeScheme.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xWaWV3R3JhZGVTY2hlbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-z1ytpk89p0
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/EvaluationScheme.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZhbHVhdGlvblNjaGVtZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-5k22p945mn
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/Evaluator.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZhbHVhdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-3ka57n15e0
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/EvaluatorDistribution.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZhbHVhdG9yRGlzdHJpYnV0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-fsgrj4n6nm
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/Exam.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhhbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-o4ahzm9a1y
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/GradeScheme.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVTY2hlbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-g8bsrl8thz
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/Group.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4aw8828btd
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-bs0l5ygr6a
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zeun1irukx
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/MainMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zfuegoh5kt
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/ScheduleExam.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NoZWR1bGVFeGFtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-8nfdzexhpc
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/Student.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-yfufaiuhf9
+
+[C:/Users/Ecaterina/source/Projects/GradingSystem/Client/GradingSystem.Portals.Admin/Pages/Subject.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-e62m5ym2t6

@@ -1,0 +1,12 @@
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\bin\Debug\net5.0\DistributedBACControlSystem.DAL.deps.json
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\bin\Debug\net5.0\DistributedBACControlSystem.DAL.dll
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\bin\Debug\net5.0\ref\DistributedBACControlSystem.DAL.dll
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\bin\Debug\net5.0\DistributedBACControlSystem.DAL.pdb
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\obj\Debug\net5.0\DistributedBACControlSystem.DAL.csproj.AssemblyReference.cache
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\obj\Debug\net5.0\DistributedBACControlSystem.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\obj\Debug\net5.0\DistributedBACControlSystem.DAL.AssemblyInfoInputs.cache
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\obj\Debug\net5.0\DistributedBACControlSystem.DAL.AssemblyInfo.cs
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\obj\Debug\net5.0\DistributedBACControlSystem.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\obj\Debug\net5.0\DistributedBACControlSystem.DAL.dll
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\obj\Debug\net5.0\ref\DistributedBACControlSystem.DAL.dll
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystem.DAL\obj\Debug\net5.0\DistributedBACControlSystem.DAL.pdb

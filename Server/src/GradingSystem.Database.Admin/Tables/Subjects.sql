@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Subjects]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT newid(), 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [Description] NVARCHAR(200) NULL
+)

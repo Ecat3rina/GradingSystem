@@ -1,0 +1,71 @@
+<div class="d-flex edit-form-container">
+
+    <EditForm EditContext="@_editContext" OnValidSubmit="@OnFinishingEditClick" autocomplete="off">
+        <DataAnnotationsValidator />
+
+        <br />
+        @if (!string.IsNullOrWhiteSpace(ExamModel?.Id))
+
+        {
+            <div class="form-group widthForID">
+                <label for="eId">ID</label>
+                <InputText id="eId" @bind-Value="ExamModel.Id" class="form-control" readonly="true" />
+            </div>
+        }
+        <div class="form-group">
+            <label for="examName">Nume</label>
+            <InputText id="examName" @bind-Value="ExamModel.Name" class="form-control"
+                aria-describedby="examNameComment" autocomplete="off" />
+            <ValidationMessage For="@(() => ExamModel.Name)" />
+        </div>
+
+        <SubjectList InitialSubject=@_initialSubject OnSelectedSubject=@OnFinishingSelectingSubject />
+        <ValidationMessage For="@(() => ExamModel.SubjectId)" />
+
+        <GradeSchemeList InitialGradeScheme=@initialGradeSchemeName OnSelectedGradeScheme=@OnFinishingSelectingGradeScheme />
+        <ValidationMessage For="@(() => ExamModel.GradeSchemeId)" />
+
+
+        <div class="form-group">
+            <label for="numberOfPages">Numarul total de pagini</label>
+            <InputNumber @bind-Value="ExamModel.NumberOfPages" class="form-control"
+                aria-describedby="numberOfPagesComment" autocomplete="off" />
+            <ValidationMessage id="nrPages" For="@(() => ExamModel.NumberOfPages)" />
+        </div>
+
+        <div class="form-group">
+            <label for="numberOfEvaluators">Numarul total de evaluatori</label>
+            <InputNumber @bind-Value="ExamModel.NumberOfEvaluators" class="form-control" aria-describedby="pageComment"
+                autocomplete="off" />
+            <ValidationMessage id="nrEvaluators" For="@(() => ExamModel.NumberOfEvaluators)" />
+        </div>
+
+
+        <div class="form-group">
+            <label for="start">Inceput</label>
+            <div class="form-row d-flex justify-content-around align-items-center mt-3">
+                <InputDate @bind-Value="ExamModel.StartDate" class="form-control" />
+            </div>
+        </div>
+        <div>
+            <ValidationMessage id="date" For="@(() => ExamModel.StartDate)" />
+        </div>
+
+        <div class="form-group">
+            <label for="end">Sfarsit</label>
+            <div class="form-row d-flex justify-content-around align-items-center mt-3">
+                <InputDate @bind-Value="ExamModel.EndDate" class="form-control" />
+            </div>
+        </div>
+        <div>
+            <ValidationMessage id="date" For="@(() => ExamModel.EndDate)" />
+        </div>
+
+        <div class="form-row d-flex justify-content-around align-items-center mt-3">
+            <button class="btn btn-success" type="submit">Ok</button>
+            <button @onclick="OnCancelEditClick" class="btn btn-warning">Cancel</button>
+        </div>
+
+    </EditForm>
+
+</div>

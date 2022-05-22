@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[EvaluationSchemes].[Name] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[ThesisPages].[BlobId] (Column)
+     Drop
+       [dbo].[FK_EvaluationSchemeExamId] (Foreign Key)
+     Alter
+       [dbo].[EvaluationSchemes] (Table)
+
+** Supporting actions
+
+The column [dbo].[EvaluationSchemes].[Name] is being dropped, data loss could occur.
+

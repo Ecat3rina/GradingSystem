@@ -1,0 +1,63 @@
+@page "/home/scheduleexam"
+@layout Home
+<PageTitle>Evaluatori</PageTitle>
+<div class="d-flex flex-row commands-container">
+    <button @onclick="OnGoBackClick" class="btn btn-secondary command-btn">
+        <div class="d-flex flex-row ">
+            <span class="material-icons">arrow_back</span>
+            <span>Inapoi</span>
+        </div>
+       
+    </button>
+    <button @onclick="OnAddNewScheduleExamClick" class="btn btn-success">
+        <div class="d-flex flex-row ">
+            <span class="material-icons">add</span>
+            <span>Adauga programare</span>
+        </div>
+    
+    </button>
+
+    
+</div>
+
+
+    @if(_showEditForm)
+    {
+        <AddScheduleExam
+        ScheduleExamModel=@scheduleExam 
+        OnEditFinished=@OnFinishingEditingScheduleExam
+        OnEditCanceled=@OnEditScheduleExamCanceled 
+        />
+    }
+
+
+<div class="d-flex flex-row main-table">
+<table class="table table-striped table-bordered ">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Grupul</th>
+            <th scope="col">Examene</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            if (groupExams != null)
+            {
+                foreach (var groupExam in groupExams)
+                {
+                    <tr>
+                        <td>@groupExam.GroupName</td>
+                        <td> 
+                        @foreach(var exam in @groupExam.Exams)
+                        {
+                            <label>@exam</label>
+                            <br>
+                        }
+                        </td>
+                    </tr>
+                }
+            }
+        }
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,66 @@
+<div class="d-flex edit-form-container">
+
+    <EditForm EditContext="@_editContext" OnValidSubmit="@OnFinishingEditClick" autocomplete="off">
+        <DataAnnotationsValidator />
+        @*<ValidationSummary />*@
+        @if (!string.IsNullOrWhiteSpace(StudentModel?.Id))
+
+        {
+            <div class="form-group">
+                <label for="sId">ID</label>
+                <InputText id="sId" @bind-Value="StudentModel.Id" class="form-control" readonly="true"/>
+            </div>
+        }
+
+        <div class="form-group">
+            <label for="lastname">Nume</label>
+            <InputText id="lastname" @bind-Value="StudentModel.LastName" class="form-control"
+                aria-describedby="lastnameComment" autocomplete="off" />
+            <ValidationMessage For="@(() => StudentModel.LastName)" />
+            @* <small id="lastnameComment" class="form-text text-muted">Numele este obligatoriu</small> *@
+        </div>
+        <div class="form-group widthForID">
+            <label for="firstname">Prenume</label>
+            <InputText id="firstname" @bind-Value="StudentModel.FirstName" class="form-control"
+                aria-describedby="firstnameComment" autocomplete="off" />
+            <ValidationMessage For="@(() => StudentModel.FirstName)" />
+            @* <small id="firstnameComment" class="form-text text-muted">Prenumele este obligatoriu</small> *@
+        </div>
+        
+        <GroupList 
+        InitialGroup=@initialGroup 
+        OnSelectedGroup=@OnFinishingSelectingGroup />
+        <ValidationMessage For="@(() => StudentModel.GroupId)" />
+
+        <div class="form-group">
+            <label for="idnp">IDNP</label>
+            <InputText id="idnp" @bind-Value="StudentModel.IDNP" class="form-control" aria-describedby="idnpcomment"
+                autocomplete="off" />
+            <ValidationMessage For="@(() => StudentModel.IDNP)" />
+        </div>
+
+
+        <div class="form-group">
+            <label for="birthDate">Data nasterii</label>
+            <div class="form-row d-flex justify-content-around align-items-center mt-3">
+                <InputDate @bind-Value="StudentModel.BirthDate" class="form-control" />
+            </div>
+            <div>
+                <ValidationMessage id="date" For="@(() => StudentModel.BirthDate)" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Adresa</label>
+            <InputText id="address" @bind-Value="StudentModel.Address" class="form-control"
+                aria-describedby="addresscomment" autocomplete="off" />
+            <ValidationMessage For="@(() => StudentModel.Address)" />
+        </div>
+        <div class="form-row d-flex justify-content-around align-items-center mt-3">
+            <button class="btn btn-success" type="submit">Ok</button>
+            <button @onclick="OnCancelEditClick" class="btn btn-warning">Cancel</button>
+        </div>
+
+    </EditForm>
+
+</div>

@@ -1,0 +1,92 @@
+﻿
+
+html, body {
+    margin: 0;
+    height: 100vh;
+}
+
+#app{
+    margin: 0;
+    height: 100vh;
+    flex:1;
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+main {
+    flex: 1;
+}
+.validation-message {
+    color: red;
+}
+
+#date{
+    visibility: hidden;
+}
+
+#date:after{
+    visibility: visible;
+    content: 'Data este obligatorie';
+    float: left;
+}
+#item{
+    visibility: hidden;
+}
+
+#item:after{
+    visibility: visible;
+    content: 'Numarul itemului este invalid';
+    float: left;
+}
+#page{
+    visibility: hidden;
+}
+
+#page:after{
+    visibility: visible;
+    content: 'Numarul paginii este invalid';
+    float: left;
+}
+#score{
+    visibility: hidden;
+}
+
+#score:after{
+    visibility: visible;
+    content: 'Valoarea scorului este invalida';
+    float: left;
+}
+
+#nrPages{
+    visibility: hidden;
+}
+
+#nrPages:after{
+    visibility: visible;
+    content: 'Numarul total de pagini este invalid';
+    float: left;
+}
+
+#nrEvaluators{
+    visibility: hidden;
+}
+
+#nrEvaluators:after{
+    visibility: visible;
+    content: 'Numarul total de evaluatori este invalid';
+    float: left;
+}
+
+.widthForID{
+    width: 330px;
+}

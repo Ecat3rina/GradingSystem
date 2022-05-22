@@ -1,0 +1,43 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[EvaluationRepartitions] (Table)
+       [dbo].[EvaluationSchemes] (Table)
+       [dbo].[Evaluators] (Table)
+       [dbo].[Exams] (Table)
+       [dbo].[GradeSchemes] (Table)
+       [dbo].[Scores] (Table)
+       [dbo].[Students] (Table)
+       [dbo].[Subjects] (Table)
+       [dbo].[Theses] (Table)
+       [dbo].[ThesisPages] (Table)
+       Default Constraint: unnamed constraint on [dbo].[EvaluationRepartitions] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[EvaluationSchemes] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Evaluators] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Exams] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[GradeSchemes] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Students] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Subjects] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Theses] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ThesisPages] (Default Constraint)
+       [dbo].[FK_EvaluatorId] (Foreign Key)
+       [dbo].[FK_ThesisPaged] (Foreign Key)
+       [dbo].[FK_EvaluationSchemeExamId] (Foreign Key)
+       [dbo].[FK_ExamSubjectId] (Foreign Key)
+       [dbo].[FK_ExamEvaluationSchemeId] (Foreign Key)
+       [dbo].[FK_ExamId] (Foreign Key)
+       [dbo].[FK_EvaluationRepartitionId] (Foreign Key)
+       [dbo].[FK_ScoreRepartitionEvaluationSchemeId] (Foreign Key)
+       [dbo].[FK_StudentId] (Foreign Key)
+       [dbo].[FK_ThesisId] (Foreign Key)
+
+** Supporting actions

@@ -1,0 +1,49 @@
+ @page "/home/main"
+ @layout Home
+ <div class="d-flex flex-column align-items-start section-text">
+        <div class="d-flex flex-row">
+            <p class="lead mt-3">Candidati</p>
+        </div>
+        <div class="d-flex flex-row">
+            <span @onclick="OnStudentsManagementClick" class="admin-action">Gestionare candidati</span>
+        </div>
+    </div>
+
+    <hr />
+
+  <div class="d-flex flex-column align-items-start section-text">
+        <div class="d-flex flex-row">
+            <p class="lead mt-3">Evaluatori</p>
+        </div>
+        <div class="d-flex flex-row">
+            <span @onclick="OnEvaluatorsManagementClick" class="admin-action">Gestionare evaluatori</span>
+        </div>
+    </div>
+
+    <hr />
+    <div class="d-flex flex-column align-items-start section-text">
+        <div class="d-flex flex-row">
+            <p class="lead mt-3">Examene</p>
+        </div>
+        <div class="d-flex flex-row">
+            <span @onclick="OnSubjectsManagementClick" class="admin-action">Gestionare discipline de examen</span>
+            <span @onclick="OnExamsManagementClick" class="admin-action">Gestionare examene</span>
+            <span @onclick="OnGroupsManagementClick" class="admin-action">Gestionare grupe</span>
+            <span @onclick="OnScheduleExamClick" class="admin-action">Programare candidati la examen</span>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="d-flex flex-column align-items-start section-text">
+        <div class="d-flex flex-row">
+            <p class="lead mt-3">Evaluare probe de examen</p>
+        </div>
+        <div class="d-flex flex-row">
+            <span @onclick="OnGradeSchemesManagementClick" class="admin-action">Scheme de notare</span>
+            <span @onclick="OnOnEvaluatorDistributionClick" class="admin-action">Repartitie evaluatori</span>
+            <span @onclick="OnEvaluationSchemesManagementClick" class="admin-action">Bareme de notare</span>
+        </div>
+    </div>
+
+    <hr />

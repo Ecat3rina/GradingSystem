@@ -1,0 +1,5 @@
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystemDB\bin\Debug\DistributedBACControlSystemDataBase.dacpac
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystemDB\bin\Debug\DistributedBACControlSystemDB.dll
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystemDB\bin\Debug\DistributedBACControlSystemDB.pdb
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystemDB\obj\Debug\DistributedBACControlSystemDB.dll
+C:\Users\Ecaterina\source\repos\DistributedBACControlSystemDB\obj\Debug\DistributedBACControlSystemDB.pdb

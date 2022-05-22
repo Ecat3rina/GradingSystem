@@ -1,0 +1,20 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column Grade in table [dbo].[GradeSchemeComponent] is currently  DECIMAL (18, 3) NULL but is being changed
+         to  INT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type 
+         INT NULL.
+
+** User actions
+     Alter
+       [dbo].[GradeSchemeComponent] (Table)
+
+** Supporting actions
+
+The type for column Grade in table [dbo].[GradeSchemeComponent] is currently  DECIMAL (18, 3) NULL but is being changed to  INT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NULL.
+

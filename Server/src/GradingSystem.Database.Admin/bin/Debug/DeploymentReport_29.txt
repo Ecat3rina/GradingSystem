@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Exams]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Exams] (Default Constraint)
+     Table rebuild
+       [dbo].[Exams] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_ExamId] (Foreign Key)
+       [dbo].[FK_ExamSubjectId] (Foreign Key)
+       [dbo].[FK_ExamEvaluationSchemeId] (Foreign Key)
+     Create
+       [dbo].[FK_ExamId] (Foreign Key)
+       [dbo].[FK_ExamSubjectId] (Foreign Key)
+       [dbo].[FK_ExamEvaluationSchemeId] (Foreign Key)

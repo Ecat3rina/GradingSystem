@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[GradeSchemes]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT newid(), 
+    [Name] NVARCHAR(50) NOT NULL, 
+    --CONSTRAINT [FK_ExamId] FOREIGN KEY (ExamId) REFERENCES Exams(Id) 
+
+)

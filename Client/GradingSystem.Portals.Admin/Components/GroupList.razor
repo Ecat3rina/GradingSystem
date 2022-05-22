@@ -1,0 +1,11 @@
+<div class="form-group">
+    <label for="name">Grupul</label>
+    <div class="form-row d-flex justify-content-around align-items-center mt-3">
+        <select class="form-control" value="@InitialGroup" @onchange="ReceiveNewGroup">
+            @foreach (var group in groupList)
+            {
+                <option value="@group.Id"> @group.Name </option>
+            }
+        </select>
+    </div>
+</div>

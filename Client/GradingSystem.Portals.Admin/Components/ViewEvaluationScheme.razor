@@ -1,0 +1,40 @@
+<div class="view-form-container">
+    <div class="form-row d-flex mt-3 mb-3">
+        <label>Baremul de notare a examenului @examName</label>
+    </div>
+    <div class="view-table-container">
+        <table class="table table-striped table-bordered ">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Pagina</th>
+                    <th scope="col">Punctaj minim</th>
+                    <th scope="col">Punctaj maxim</th>
+                    <th scope="col">Raspunsul corect</th>
+                    <th scope="col">Specificatii</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    if (@EvaluationSchemeModel.EvaluationSchemeComponents != null)
+                    {
+                        foreach (var component in @EvaluationSchemeModel.EvaluationSchemeComponents)
+                        {
+                            <tr>
+                                <td>@component.ItemNr</td>
+                                <td>@component.PageNr</td>
+                                <td>@component.MinimumScore</td>
+                                <td>@component.MaximumScore</td>
+                                <td>@component.CorrectAnswer</td>
+                                <td>@component.Specifications</td>
+                            </tr>
+                        }
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="form-row d-flex mt-3">
+        <button @onclick="OnCancelViewClick" class="btn btn-warning">Cancel</button>
+    </div>
+</div>

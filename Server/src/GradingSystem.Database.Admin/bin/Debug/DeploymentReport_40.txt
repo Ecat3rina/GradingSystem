@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[EvaluationSchemeComponent] (Table)
+       Default Constraint: unnamed constraint on [dbo].[EvaluationSchemeComponent] (Default Constraint)
+       [dbo].[FK_EvaluationSchemeComponent] (Foreign Key)
+       [dbo].[FK_EvaluationSchemeExamId] (Foreign Key)
+       [dbo].[FK_ExamEvaluationSchemeId] (Foreign Key)
+       [dbo].[FK_GradeSchemeComponent] (Foreign Key)
+       [dbo].[FK_ExamId] (Foreign Key)
+
+** Supporting actions

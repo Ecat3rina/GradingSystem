@@ -1,0 +1,34 @@
+<div class="view-form-container">
+    <div class="form-row d-flex mt-3 mb-3">
+        <label>Schema de notare @GradeSchemeModel.Name</label>
+    </div>
+    <div class="view-table-container">
+        <table class="table table-striped table-bordered ">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Punctaj minim</th>
+                    <th scope="col">Punctaj maxim</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    if (@GradeSchemeModel.GradeSchemeComponents != null)
+                    {
+                        foreach (var component in @GradeSchemeModel.GradeSchemeComponents)
+                        {
+                            <tr>
+                                <td>@component.Grade</td>
+                                <td>@component.MinimumScore</td>
+                                <td>@component.MaximumScore</td>
+                            </tr>
+                        }
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="form-row d-flex mt-3">
+        <button @onclick="OnCancelViewClick" class="btn btn-warning">Cancel</button>
+    </div>
+</div>

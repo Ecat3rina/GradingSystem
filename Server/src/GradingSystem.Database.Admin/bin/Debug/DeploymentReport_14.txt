@@ -1,0 +1,30 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[EvaluationSchemes] (Table)
+       [dbo].[Evaluators] (Table)
+       [dbo].[Exams] (Table)
+       [dbo].[GradeSchemes] (Table)
+       [dbo].[Students] (Table)
+       [dbo].[Subjects] (Table)
+       Default Constraint: unnamed constraint on [dbo].[EvaluationSchemes] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Evaluators] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Exams] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[GradeSchemes] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Students] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Subjects] (Default Constraint)
+       [dbo].[FK_EvaluatorSubjectId] (Foreign Key)
+       [dbo].[FK_ExamSubjectId] (Foreign Key)
+       [dbo].[FK_ExamEvaluationSchemeId] (Foreign Key)
+       [dbo].[FK_ExamId] (Foreign Key)
+
+** Supporting actions

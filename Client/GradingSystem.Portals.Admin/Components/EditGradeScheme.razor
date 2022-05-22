@@ -1,0 +1,100 @@
+<div class="d-flex edit-form-container">
+
+    <EditForm EditContext="@_editContext" OnValidSubmit="@OnFinishingEditClick" autocomplete="off">
+        <DataAnnotationsValidator />
+        @if (!string.IsNullOrWhiteSpace(GradeSchemeModel?.Id))
+
+        {
+            <div class="form-group widthForID">
+                <label for="gradeSchemeId">ID</label>
+                <InputText id="gradeSchemeId" @bind-Value="GradeSchemeModel.Id" class="form-control" readonly="true" />
+            </div>
+
+            <div class="form-group">
+            <label for="name">Nume</label>
+            <InputText id="name" @bind-Value="GradeSchemeModel.Name" class="form-control"
+                aria-describedby="nameComment" autocomplete="off" />
+            <ValidationMessage For="@(() => GradeSchemeModel.Name)" />
+        </div>
+
+            if (@GradeSchemeModel.GradeSchemeComponents.Count > 0)
+            {
+                for (int i = 0; i < @GradeSchemeModel.GradeSchemeComponents.Count; i++)
+                {
+                    var pozitie = i;
+                    <div class="form-group">
+                        <div class="same-row">
+                            <label for="grade">Nota</label>
+                            <InputNumber @bind-Value="GradeSchemeModel.GradeSchemeComponents[pozitie].Grade" class="form-control"
+                    aria-describedby="gradeComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="min">Punctaj minim</label>
+                            <InputNumber @bind-Value="GradeSchemeModel.GradeSchemeComponents[pozitie].MinimumScore"
+                    class="form-control" aria-describedby="minComment" autocomplete="off" />
+                        </div>
+                        <div class="same-row">
+                            <label for="max">Punctaj maxim</label>
+                            <InputNumber @bind-Value="GradeSchemeModel.GradeSchemeComponents[pozitie].MaximumScore"
+                    class="form-control" aria-describedby="maxComment" autocomplete="off" />
+                        </div>
+                    </div>
+                    <div>
+                        <ValidationMessage id="gradeSchemeComponent"
+                        For="@(() => GradeSchemeModel.GradeSchemeComponents[pozitie].Grade)" />
+                        </div>
+
+                }
+
+            }
+
+        }
+
+        else
+
+        {
+            @* <ExamList InitialExam=@initialExamName OnSelectedExam=@OnFinishingSelectingExam />
+            <ValidationMessage For="@(() => GradeSchemeModel.ExamId)" /> *@
+
+                <div class="form-group">
+            <label for="name">Nume</label>
+            <InputText id="name" @bind-Value="GradeSchemeModel.Name" class="form-control"
+                aria-describedby="nameComment" autocomplete="off" />
+            <ValidationMessage For="@(() => GradeSchemeModel.Name)" />
+        </div>
+
+            for (int i = 0; i < @GradeSchemeModel.GradeSchemeComponents.Count; i++)
+            {
+                var pozitie = i;
+                <div class="form-group">
+                    <div class="same-row">
+                        <label for="grade">Nota</label>
+                        <InputNumber @bind-Value="GradeSchemeModel.GradeSchemeComponents[pozitie].Grade" class="form-control"
+                    aria-describedby="gradeComment" autocomplete="off" />
+                    </div>
+                    <div class="same-row">
+                        <label for="min">Punctaj minim</label>
+                        <InputNumber @bind-Value="GradeSchemeModel.GradeSchemeComponents[pozitie].MinimumScore"
+                    class="form-control" aria-describedby="minComment" autocomplete="off" />
+                    </div>
+                    <div class="same-row">
+                        <label for="max">Punctaj maxim</label>
+                        <InputNumber @bind-Value="GradeSchemeModel.GradeSchemeComponents[pozitie].MaximumScore"
+                    class="form-control" aria-describedby="maxComment" autocomplete="off" />
+                    </div>
+                </div>
+                <div>
+                    <ValidationMessage id="gradeSchemeComponent" For="@(() => GradeSchemeModel.GradeSchemeComponents[pozitie].Grade)" />
+                </div>
+
+            }
+
+        }
+        <div class="form-row d-flex mt-3">
+            <button class="btn btn-success" type="submit">Ok</button>
+            <button @onclick="OnCancelEditClick" class="btn btn-warning">Cancel</button>
+        </div>
+
+    </EditForm>
+
+</div>

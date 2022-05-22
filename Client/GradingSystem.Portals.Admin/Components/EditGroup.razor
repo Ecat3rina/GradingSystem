@@ -1,0 +1,35 @@
+<div class="d-flex edit-form-container">
+
+    <EditForm EditContext="@_editContext" OnValidSubmit="@OnFinishingEditClick" autocomplete="off">
+        <DataAnnotationsValidator />
+        @if (!string.IsNullOrWhiteSpace(GroupModel?.Id))
+
+        {
+            <div class="form-group">
+                <label for="gId">ID</label>
+                <InputText id="gId" @bind-Value="GroupModel.Id" class="form-control" readonly="true"/>
+            </div>
+        }
+
+        <div class="form-group">
+            <label for="groupname">Nume</label>
+            <InputText id="groupname" @bind-Value="GroupModel.Name" class="form-control"
+                aria-describedby="groupnameComment" autocomplete="off" />
+            <ValidationMessage For="@(() => GroupModel.Name)" />
+        </div>
+        
+        <div class="form-group widthForID">
+            <label for="description">Descriere(optional)</label>
+            <InputText id="description" @bind-Value="GroupModel.Description" class="form-control"
+                aria-describedby="descriptionComment" autocomplete="off" />
+            <ValidationMessage For="@(() => GroupModel.Description)" />
+        </div>
+        
+        <div class="form-row d-flex justify-content-around align-items-center mt-3">
+            <button class="btn btn-success" type="submit">Ok</button>
+            <button @onclick="OnCancelEditClick" class="btn btn-warning">Cancel</button>
+        </div>
+
+    </EditForm>
+
+</div>

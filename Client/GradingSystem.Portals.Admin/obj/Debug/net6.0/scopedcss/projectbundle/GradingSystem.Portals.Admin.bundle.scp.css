@@ -1,0 +1,303 @@
+/* /Components/AddScheduleExam.razor.rz.scp.css */
+.edit-form-container[b-vqpkoi4lds]{
+    margin-left: 10px;
+}
+
+.btn-warning[b-vqpkoi4lds]{
+    margin-left: 1%;
+}
+/* /Components/DeleteModal.razor.rz.scp.css */
+.modal[b-0qpype1tw0]{
+    display:block;
+    background-color: rgba(10,10,10,.8);
+}
+
+.close[b-0qpype1tw0]{
+width: 10%;
+}
+/* /Components/EditEvaluationScheme.razor.rz.scp.css */
+.edit-form-container[b-66oail3xyt]{
+    margin-left: 10px;
+}
+.same-row[b-66oail3xyt]{
+    display: inline-block;
+}
+ 
+ .evSchemeName[b-66oail3xyt]{
+    width: 630px;
+}
+ .btn-warning[b-66oail3xyt]{
+     margin-left: 1%;
+ }
+/* /Components/EditEvaluator.razor.rz.scp.css */
+.edit-form-container[b-7f4bdhwhxl]{
+    margin-left: 10px;
+}
+/* /Components/EditExam.razor.rz.scp.css */
+.edit-form-container[b-evncwqqcqc]{
+    margin-left: 10px;
+}
+
+
+
+
+/* /Components/EditGradeScheme.razor.rz.scp.css */
+.edit-form-container[b-yy3qsn98kg]{
+    margin-left: 10px;
+}
+
+.same-row[b-yy3qsn98kg]{
+    display: inline-block;
+}
+ .btn-warning[b-yy3qsn98kg]{
+     margin-left: 1%;
+ }
+/* /Components/EditGroup.razor.rz.scp.css */
+.edit-form-container[b-5pa8dmulba]{
+    margin-left: 10px;
+}
+/* /Components/EditStudent.razor.rz.scp.css */
+.edit-form-container[b-atxgitijw5]{
+    margin-left: 10px;
+}
+/* /Components/EditSubject.razor.rz.scp.css */
+.edit-form-container[b-9lw6nv6h5q]{
+    margin-left: 10px;
+}
+/* /Components/EvaluationSchemeList.razor.rz.scp.css */
+/* /Components/ExamList.razor.rz.scp.css */
+/* /Components/GradeSchemeList.razor.rz.scp.css */
+/* /Components/GroupList.razor.rz.scp.css */
+/* /Components/SubjectList.razor.rz.scp.css */
+/* /Components/ViewEvaluationScheme.razor.rz.scp.css */
+.view-form-container[b-81i6k49c7c]{
+    margin-left: 10px;
+}
+.view-table-container[b-81i6k49c7c]{
+    margin-right: 10px; 
+}
+/* /Components/ViewGradeScheme.razor.rz.scp.css */
+.view-form-container[b-z1ytpk89p0]{
+    margin-left: 10px;
+}
+.view-table-container[b-z1ytpk89p0]{
+    margin-right: 1000px; 
+}
+/* /Pages/EvaluationScheme.razor.rz.scp.css */
+.main-table[b-5k22p945mn]{
+    margin: 10px !important;
+}
+
+.material-icons[b-5k22p945mn]{
+    cursor: pointer;
+}
+
+.commands-container[b-5k22p945mn]{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn[b-5k22p945mn]{
+    margin-right: 10px;
+}
+/* /Pages/Evaluator.razor.rz.scp.css */
+.main-table[b-3ka57n15e0]{
+    margin: 10px !important;
+}
+
+.material-icons[b-3ka57n15e0]{
+    cursor: pointer;
+}
+
+.commands-container[b-3ka57n15e0]{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn[b-3ka57n15e0]{
+    margin-right: 10px;
+}
+/* /Pages/EvaluatorDistribution.razor.rz.scp.css */
+.main-table[b-fsgrj4n6nm]{
+    margin: 10px !important;
+}
+
+.material-icons[b-fsgrj4n6nm]{
+    cursor: pointer;
+}
+
+.commands-container[b-fsgrj4n6nm]{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn[b-fsgrj4n6nm]{
+    margin-right: 10px;
+}
+/* /Pages/Exam.razor.rz.scp.css */
+.main-table[b-o4ahzm9a1y]{
+    margin: 10px !important;
+}
+
+.material-icons[b-o4ahzm9a1y]{
+    cursor: pointer;
+}
+
+.commands-container[b-o4ahzm9a1y]{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn[b-o4ahzm9a1y]{
+    margin-right: 10px;
+}
+/* /Pages/GradeScheme.razor.rz.scp.css */
+.main-table[b-g8bsrl8thz]{
+    margin: 10px !important;
+}
+
+.material-icons[b-g8bsrl8thz]{
+    cursor: pointer;
+}
+
+.commands-container[b-g8bsrl8thz]{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn[b-g8bsrl8thz]{
+    margin-right: 10px;
+}
+/* /Pages/Group.razor.rz.scp.css */
+.main-table[b-4aw8828btd]{
+    margin: 10px !important;
+}
+
+.material-icons[b-4aw8828btd]{
+    cursor: pointer;
+}
+
+.commands-container[b-4aw8828btd]{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn[b-4aw8828btd]{
+    margin-right: 10px;
+}
+/* /Pages/Home.razor.rz.scp.css */
+.main-banner[b-bs0l5ygr6a]{
+    background-color: #6002ee; 
+    height: 70px;
+    
+}
+
+.brand-name[b-bs0l5ygr6a]{
+    
+    
+    margin-left: 10px;
+}
+
+.primary-color[b-bs0l5ygr6a]{
+    color: #efe5fd;
+}
+.button[b-bs0l5ygr6a]{
+    cursor: pointer;
+}
+.logout-container[b-bs0l5ygr6a]{
+    margin-right : 10px;
+}
+
+.logout-btn:hover[b-bs0l5ygr6a]{
+    color: #d4bff9;
+}
+
+.default-cursor[b-bs0l5ygr6a]{
+    cursor: default;
+}
+.username[b-bs0l5ygr6a]{
+    margin-left: 3px;
+}
+
+/* /Pages/Login.razor.rz.scp.css */
+.big-icon[b-zeun1irukx]{
+    font-size: 160px;
+}
+label[b-zeun1irukx]{
+    color: red;
+}
+/* /Pages/MainMenu.razor.rz.scp.css */
+.section-text[b-zfuegoh5kt]{
+    margin-left: 15px;
+    color: #0000d6;
+}
+
+.admin-action[b-zfuegoh5kt]{
+    border: 1px solid gray;
+    color:  #efe5fd;;
+    padding: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #a200e0;
+}
+/* /Pages/ScheduleExam.razor.rz.scp.css */
+.main-table[b-8nfdzexhpc]{
+    margin: 10px !important;
+    width: 700px;
+}
+
+.material-icons[b-8nfdzexhpc]{
+    cursor: pointer;
+}
+
+.commands-container[b-8nfdzexhpc]{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn[b-8nfdzexhpc]{
+    margin-right: 10px;
+}
+/* /Pages/Student.razor.rz.scp.css */
+.main-table[b-yfufaiuhf9]{
+    margin: 10px !important;
+}
+
+.material-icons[b-yfufaiuhf9]{
+    cursor: pointer;
+}
+
+.commands-container[b-yfufaiuhf9]{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn[b-yfufaiuhf9]{
+    margin-right: 10px;
+}
+/* /Pages/Subject.razor.rz.scp.css */
+.main-table[b-e62m5ym2t6]{
+    margin: 10px !important;
+}
+
+.material-icons[b-e62m5ym2t6]{
+    cursor: pointer;
+}
+
+.commands-container[b-e62m5ym2t6]{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;;
+}
+
+.command-btn[b-e62m5ym2t6]{
+    margin-right: 10px;
+}

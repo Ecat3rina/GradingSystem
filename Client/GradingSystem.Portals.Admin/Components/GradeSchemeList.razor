@@ -1,0 +1,11 @@
+<div class="form-group">
+    <label>Schema de notare</label>
+    <div class="form-row d-flex justify-content-around align-items-center mt-3">
+        <select class="form-control" value="@InitialGradeScheme" @onchange="ReceiveNewScheme">
+            @foreach (var scheme in schemeList)
+            {
+                <option value="@scheme.Id"> @scheme.Name </option>
+            }
+        </select>
+    </div>
+</div>

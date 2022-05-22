@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[EvaluationRepartitions] (Table)
+       [dbo].[Scores] (Table)
+       [dbo].[Theses] (Table)
+       Default Constraint: unnamed constraint on [dbo].[EvaluationRepartitions] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Theses] (Default Constraint)
+
+** Supporting actions

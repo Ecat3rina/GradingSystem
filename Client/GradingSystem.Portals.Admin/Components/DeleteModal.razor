@@ -1,0 +1,17 @@
+<div class="modal fade show" id="myModal" aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Atentie</h4>
+                <button type="button" class="close form-control"  @onclick="@ModalCancel" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <p>Sigur doriti sa eliminati @Text cu ID ul @Id ?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" @onclick=@ModalOk>Da</button>
+                <button type="button" class="btn btn-primary" @onclick="@ModalCancel">Anulare</button>
+            </div>
+        </div>
+    </div>
+</div>

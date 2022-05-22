@@ -1,0 +1,13 @@
+.section-text{
+    margin-left: 15px;
+    color: #0000d6;
+}
+
+.admin-action{
+    border: 1px solid gray;
+    color:  #efe5fd;;
+    padding: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #a200e0;
+}

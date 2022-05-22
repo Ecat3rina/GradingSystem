@@ -1,0 +1,11 @@
+<div class="form-group">
+    <label for="examName">Examenul</label>
+    <div class="form-row d-flex justify-content-around align-items-center mt-3">
+        <select class="form-control" value="@InitialExam" @onchange="ReceiveNewExam">
+            @foreach (var exam in examList)
+            {
+                <option value="@exam.Id"> @exam.Name </option>
+            }
+        </select>
+    </div>
+</div>
