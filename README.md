@@ -1,1 +1,2 @@
 # GradingSystem
+  Web application useful for the verification of exams(Baccalaureate). Administrator manages the candidates, evaluators, theses, exams, grading schemes, distribution to evaluators, etc. Evaluators enter the application, select thesis and the scanned thesis is displayed near the inputs intented for scoring. Candidates enter the application, select the thesis which is verified and the scanned thesis is displayed near the list of evaluators and the scores they have given.
